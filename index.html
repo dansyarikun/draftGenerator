@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモンタイプドラフト戦でのデッキジェネレーター</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>項目のグループ分け</h1>
+    <label for="input-items">入力項目（改行で区切る）:</label><br>
+    <textarea id="input-items"></textarea>
+
+    <br><br>
+
+    <label for="group-count">グループ数:</label>
+    <select id="group-count">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+
+    </select>
+
+    <br><br>
+
+    <button onclick="generateGroups()">グループを振り分け</button>
+
+    <br><br>
+
+    <pre id="output"></pre>
+    <div id="file-links"></div> <!-- ダウンロードリンクを表示するための要素 -->
+
+    <script src="app.js"></script>
+</body>
+</html>
