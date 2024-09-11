@@ -23,7 +23,7 @@ function generateGroups() {
     groups.forEach((group, index) => {
         output += group.join('\n') + '\n\n';
     });
-    document.getElementById("output").textContent = output;
+    //document.getElementById("output").textContent = output;
 
      // グループごとに.txtファイルを生成
      generateFiles(groups);
